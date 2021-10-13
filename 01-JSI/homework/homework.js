@@ -67,7 +67,7 @@ function elevarAlCuadrado(num) {
   // Devuelve el valor de "num" elevado al cuadrado
   // Ojo: No es raiz cuadrada!
   // Tu código:
-  return num**num;
+  return num**2;
 
 }
 
@@ -208,7 +208,7 @@ function esPrimo(numero) {
   }
 
   for (var i = 2; i < numero; i++) {
-    if (numero % 1 === 0) return false;
+    if (numero % i === 0) return false;
   }
   return true;
 }
