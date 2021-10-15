@@ -33,8 +33,8 @@ function dePalabrasAFrase(palabras) {
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
   var frase = palabras[0];
-  for (var i = 0; i < palabras.length; i++) {
-    frase = frase + ' ' + palabras[i]
+  for (var i = 1; i < palabras.length; i++) {
+    frase = frase + ' ' + palabras[i];
   }
   return frase;
 
@@ -92,13 +92,13 @@ function multiplicarArgumentos() {
 function cuentoElementos(arreglo){
   // Realiza una función que retorne la cantidad de los elementos del arreglo que sean mayores a 18.
   // Tu código:
-  var cuenta = 0;
+  var count = 0;
   for(var i = 0; i < arreglo.length; i++) {
     if (arreglo[i] > 18) {
-      cuenta++
+      count++;
     }
   }
-  return cuenta;
+  return count;
 
 }
 
@@ -106,9 +106,9 @@ function todosIguales(arreglo) {
   // Escriba la función todosIguales, si todos los elementos de un arreglo son iguales
   // retornar true, caso contrario retornar false.
   // Tu código:
-  var igual = arreglo[0];
+  var pivot = arreglo[0];
   for(var i = 0; i < arreglo.length; i++) {
-    if (arreglo[i] !== igual) {
+    if (arreglo[i] !== pivot) {
       return false;
     }
   }
@@ -142,11 +142,11 @@ function breakStatement(numero) {
   // Tu código:
   var resultados = [];
   for (var i = 0; i < 10; i++) {
-    if (i === numero) break;
+    if (i === numero) if (i<10) return 'Se interrumpió la ejecución';
     numero = numero + 2;
     resultados.push(numero);
   }
-  if (i<10) return 'Se interrumpió la ejecución';
+  
   return resultados;
 
 }
@@ -217,7 +217,7 @@ function eliminarPropiedad(objeto, unaPropiedad) {
   // tip: tenes que usar bracket notation
   // Devuelve el objeto
   // Tu código:
-  delete ojbeto[unaPropiedad];
+  delete objeto[unaPropiedad];
   return objeto;
 }
 
