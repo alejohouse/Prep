@@ -17,7 +17,7 @@ function crearUsuario() {
     }
 
     saludar() {
-      return 'Hola mi nombres es '+ this.nombre;
+      return 'Hola, mi nombres es '+ this.nombre;
     }
   }
   return Usuario;
@@ -28,7 +28,7 @@ function agregarMetodoPrototype(ClaseInventada) {
   // El método debe llamarse "saludar" y debe devolver la string "Hello World!"
   // Tu código:
   ClaseInventada.prototype.saludar = function() {
-    return 'Hello World';
+    return 'Hello World!';
   }
 }
 
