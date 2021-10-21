@@ -3,7 +3,7 @@
 function devolverUltimoElemento(array) {
   // Devuelve el último elemento de un array
   // Tu código:
-  return array[array.length-1];
+  return array[array.length - 1];
 
 }
 
@@ -53,7 +53,7 @@ function promedioResultadosTest(resultadosTest) {
   // Itera (en un bucle) los elementos del array, calcula y devuelve el promedio de puntajes
   // Tu código:
   var suma = 0;
-  for (var i = 0; resultadosTest.length; i++) {
+  for (var i = 0; i < resultadosTest.length; i++) {
     suma = suma + resultadosTest[i];
   }
   return suma/resultadosTest.length;
@@ -277,11 +277,11 @@ function sumarLikesDeUsuario(usuario) {
   // Suma todos los likes de todos los objetos "post"
   // Devuelve la suma
   // Tu código:
-  var suma = 0;
+  var sumaLikes = 0;
   for (var i = 0; i < usuario.posts.length; i++) {
-    suma =suma + usuario.posts[i].likes;
+    sumaLikes =sumaLikes + usuario.posts[i].likes;
   }
-  return suma;
+  return sumaLikes;
 
 }
 
