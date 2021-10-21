@@ -17,7 +17,7 @@ function crearUsuario() {
     }
 
     saludar() {
-      return 'Hola, mi nombres es '+ this.nombre;
+      return 'Hola, mi nombre es '+ this.nombre;
     }
   }
   return Usuario;
