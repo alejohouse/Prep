@@ -21,6 +21,7 @@ function crearUsuario() {
     }
   }
   return Usuario;
+  
 }
 
 function agregarMetodoPrototype(ClaseInventada) {
@@ -69,7 +70,7 @@ function crearInstanciaPersona(nombre, apellido, edad, dir) {
   //Devolver la nueva persona creada
   // Tu código:
   var nuevaPersona = new Persona ('Juan', 'Perez', 22, 'Saavedra 123');
-  return nuevaPersona
+  return nuevaPersona;
 }
   
 function agregarMetodo() {
@@ -78,6 +79,7 @@ function agregarMetodo() {
   // Tu código:
   Persona.prototype.datos = function () {
     return this.nombre + ', ' + this.edad + ' años';
+
   }
 }
   
